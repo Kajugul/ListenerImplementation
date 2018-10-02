@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Google URL verfication" parallel="tests" preserve-order="true">
+
+
+    <listeners>
+        <listener class-name="RetryListenerClass" />
+    </listeners>
+
+    <listeners>
+        <listener class-name="Listener" />
+    </listeners>
+
+
+    <test name="Google Verification">
+        <classes>
+            <class name="Test_01"/>
+        </classes>
+    </test>
+
+</suite>
